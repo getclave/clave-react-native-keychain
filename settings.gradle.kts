@@ -1,4 +1,4 @@
-rootProject.name = "clave-react-native-keychain"
+rootProject.name = "clave-rn-keychain"
 
 include(":library")
 project(":library").projectDir = File(rootProject.projectDir, "./android")

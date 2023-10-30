@@ -413,7 +413,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - RNKeychain (from `../node_modules/clave-react-native-keychain`)
+  - RNKeychain (from `../node_modules/clave-rn-keychain`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -498,7 +498,7 @@ EXTERNAL SOURCES:
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
   RNKeychain:
-    :path: "../node_modules/clave-react-native-keychain"
+    :path: "../node_modules/clave-rn-keychain"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
