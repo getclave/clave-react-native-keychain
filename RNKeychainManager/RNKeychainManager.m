@@ -531,6 +531,7 @@ RCT_EXPORT_METHOD(getInternetCredentialsForServer:(NSString *)server
 }
 
 RCT_EXPORT_METHOD(resetInternetCredentialsForServer:(NSString *)server
+                  withOptions:(NSDictionary *)options
                   resolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
 {
