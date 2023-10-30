@@ -89,6 +89,7 @@ type BaseOptions = {|
   service?: string,
   securityLevel?: SecMinimumLevel,
   storage?: SecStorageType,
+  synchronize?: boolean,
   rules?: SecSecurityRules,
 |};
 
