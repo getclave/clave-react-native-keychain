@@ -11,7 +11,7 @@
 > Important! to set checkbox `Allow parallel run`.
 
 ```bash
-# cd react-native-keychain
+# cd clave-react-native-keychain
 ./gradlew :android
 ```
 
@@ -20,7 +20,7 @@
 ![Configure Execution of all Unit Tests](https://i.imgur.com/vjDVPYhh.png)
 
 ```bash
-# cd react-native-keychain
+# cd clave-react-native-keychain
 ./gradlew test
 ```
 
@@ -29,12 +29,12 @@
 ![React Native Start](https://i.imgur.com/nvLZ9Fph.png)
 
 ```bash
-# cd react-native-keychain/KeychainExample
+# cd clave-react-native-keychain/KeychainExample
 react-native start --reset-cache
 ```
 
 ```bash
-# set working dir to: 'react-native-keychain/KeychainExample'
+# set working dir to: 'clave-react-native-keychain/KeychainExample'
 /usr/bin/env node node_modules/.bin/react-native start --reset-cache
 ```
 
@@ -60,9 +60,9 @@ Needed for automatic re-publishing of changes source code for sample:
 The same results can be achieved by executing this command:
 
 ```bash
-# cd react-native-keychain/KeychainExample
+# cd clave-react-native-keychain/KeychainExample
 yarn --force
 
-# cd react-native-keychain
+# cd clave-react-native-keychain
 ./gradlew updateLibrarySourcesInExample
 ```

@@ -55,7 +55,7 @@ allprojects {
 }
 
 val updateLibrarySourcesInExample by tasks.registering(Copy::class) {
-  into("${rootProject.projectDir}/KeychainExample/node_modules/react-native-keychain/")
+  into("${rootProject.projectDir}/KeychainExample/node_modules/clave-react-native-keychain/")
 
   from("${rootProject.projectDir}/android/src/"){
     into("android/src")

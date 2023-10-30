@@ -1,5 +1,5 @@
 {
-  "name": "react-native-keychain",
+  "name": "clave-react-native-keychain",
   "version": "8.1.2",
   "description": "Keychain Access for React Native",
   "main": "index.js",
@@ -31,17 +31,17 @@
     "name": "Joel Arvidsson",
     "email": "joel@oblador.se"
   },
-  "homepage": "https://github.com/oblador/react-native-keychain",
+  "homepage": "https://github.com/getclave/clave-react-native-keychain",
   "bugs": {
-    "url": "https://github.com/oblador/react-native-keychain/issues"
+    "url": "https://github.com/getclave/clave-react-native-keychain/issues"
   },
   "typescript": {
-    "definition": "typings/react-native-keychain.d.ts"
+    "definition": "typings/clave-react-native-keychain.d.ts"
   },
-  "types": "typings/react-native-keychain.d.ts",
+  "types": "typings/clave-react-native-keychain.d.ts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/oblador/react-native-keychain.git"
+    "url": "git://github.com/getclave/clave-react-native-keychain.git"
   },
   "license": "MIT",
   "devDependencies": {

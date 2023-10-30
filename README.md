@@ -1,12 +1,10 @@
-<h1 align="center">react-native-keychain</h1>
+<h1 align="center">clave-react-native-keychain</h1>
 
 <p align="center"><img
     src="https://user-images.githubusercontent.com/378279/36642269-6195b10c-1a3d-11e8-9e1b-37a3d1bcf7b3.png"
     align="center" width="150" height="201" alt=""
   />
 </p>
-
-[![Travis](https://img.shields.io/travis/oblador/react-native-keychain.svg)](https://travis-ci.org/oblador/react-native-keychain) [![npm](https://img.shields.io/npm/v/react-native-keychain.svg)](https://npmjs.com/package/react-native-keychain) [![npm](https://img.shields.io/npm/dm/react-native-keychain.svg)](https://npmjs.com/package/react-native-keychain)
 
 # Keychain/Keystore Access for React Native
 
@@ -38,7 +36,7 @@
       - [`Keychain.STORAGE_TYPE` enum (Android only)](#keychainstorage_type-enum-android-only)
       - [`Keychain.SECURITY_RULES` enum (Android only)](#keychainsecurity_rules-enum-android-only)
   - [Important Behavior](#important-behavior)
-    - [Rule 1: Automatic Security Level Upgrade](#rule-1-automatic-security-level-upgrade)
+    - [Rule 1: Automatic Security Level](#rule-1-automatic-security-level)
   - [Manual Installation](#manual-installation)
     - [iOS](#ios)
       - [Option: Manually](#option-manually)
@@ -62,9 +60,9 @@
 
 ## Installation
 
-1. Run `yarn add react-native-keychain`
+1. Run `yarn add clave-react-native-keychain`
 
-   1 a. **Only for React Native <= 0.59**: `$ react-native link react-native-keychain` and check `MainApplication.java` to verify the package was added. See manual installation below if you have issues with `react-native link`.
+   1 a. **Only for React Native <= 0.59**: `$ react-native link clave-react-native-keychain` and check `MainApplication.java` to verify the package was added. See manual installation below if you have issues with `react-native link`.
 
 2. Run `pod install` in `ios/` directory to install iOS dependencies.
 3. If you want to support FaceID, add a `NSFaceIDUsageDescription` entry in your `Info.plist`.
@@ -73,7 +71,7 @@
 ## Usage
 
 ```js
-import * as Keychain from 'react-native-keychain';
+import * as Keychain from 'clave-react-native-keychain';
 
 async () => {
   const username = 'zuck';
@@ -311,7 +309,7 @@ A: Do call `setGenericPassword({ ...otherProps, storage: "AES" })` with forced s
 
 #### Option: Manually
 
-- Right click on Libraries, select **Add files to "…"** and select `node_modules/react-native-keychain/RNKeychain.xcodeproj`
+- Right click on Libraries, select **Add files to "…"** and select `node_modules/clave-react-native-keychain/RNKeychain.xcodeproj`
 - Select your project and under **Build Phases** -> **Link Binary With Libraries**, press the + and select `libRNKeychain.a`.
 - make sure `pod 'RNKeychain'` is not in your `Podfile`
 
@@ -320,7 +318,7 @@ A: Do call `setGenericPassword({ ...otherProps, storage: "AES" })` with forced s
 Add the following to your `Podfile` and run `pod update`:
 
 ```
-pod 'RNKeychain', :path => '../node_modules/react-native-keychain'
+pod 'RNKeychain', :path => '../node_modules/clave-react-native-keychain'
 ```
 
 #### Enable `Keychain Sharing` entitlement for iOS 10+
@@ -348,8 +346,8 @@ rootProject.name = 'MyApp'
 
 include ':app'
 
-+ include ':react-native-keychain'
-+ project(':react-native-keychain').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-keychain/android')
++ include ':clave-react-native-keychain'
++ project(':clave-react-native-keychain').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-keychain/android')
 ```
 
 - Edit `android/app/build.gradle` (note: **app** folder) to look like this:
@@ -365,7 +363,7 @@ dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
   implementation 'com.android.support:appcompat-v7:23.0.1'
   implementation 'com.facebook.react:react-native:0.19.+'
-+ implementation project(':react-native-keychain')
++ implementation project(':clave-react-native-keychain')
 }
 ```
 
@@ -430,7 +428,7 @@ const keychainMock = {
 
 1. Read the [jest docs](https://jestjs.io/docs/en/manual-mocks#mocking-node-modules) for initial setup
 
-2. Create a `react-native-keychain` folder in the `__mocks__` directory and add `index.js` file in it. It should contain the following code:
+2. Create a `clave-react-native-keychain` folder in the `__mocks__` directory and add `index.js` file in it. It should contain the following code:
 
 ```javascript
 export default keychainMock;
@@ -443,7 +441,7 @@ export default keychainMock;
 2. Inside your setup file, set up mocking for this package:
 
 ```javascript
-jest.mock('react-native-keychain', () => keychainMock);
+jest.mock('clave-react-native-keychain', () => keychainMock);
 ```
 
 Now your tests should run successfully, though note that writing and reading to the keychain will be effectively a no-op.
