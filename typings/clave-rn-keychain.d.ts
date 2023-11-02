@@ -78,6 +78,7 @@ declare module 'clave-rn-keychain' {
     authenticationType?: AUTHENTICATION_TYPE;
     service?: string;
     securityLevel?: SECURITY_LEVEL;
+    synchronize?: boolean;
     storage?: STORAGE_TYPE;
     rules?: SECURITY_RULES;
   }

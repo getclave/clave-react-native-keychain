@@ -1,6 +1,6 @@
 {
   "name": "clave-rn-keychain",
-  "version": "8.2.4",
+  "version": "8.2.5",
   "description": "Keychain Access for React Native",
   "main": "index.js",
   "files": [
