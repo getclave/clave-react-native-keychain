@@ -31,17 +31,17 @@
     "name": "Joel Arvidsson",
     "email": "joel@oblador.se"
   },
-  "homepage": "https://github.com/getclave/clave-rn-keychain",
+  "homepage": "https://github.com/getclave/react-native-keychain",
   "bugs": {
-    "url": "https://github.com/getclave/clave-rn-keychain/issues"
+    "url": "https://github.com/getclave/react-native-keychain/issues"
   },
   "typescript": {
-    "definition": "typings/clave-rn-keychain.d.ts"
+    "definition": "typings/clave-react-native-keychain.d.ts"
   },
-  "types": "typings/clave-rn-keychain.d.ts",
+  "types": "typings/clave-react-native-keychain.d.ts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/getclave/clave-rn-keychain.git"
+    "url": "git://github.com/getclave/react-native-keychain.git"
   },
   "license": "MIT",
   "devDependencies": {

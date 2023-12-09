@@ -278,7 +278,7 @@ DEPENDENCIES:
   - React-RCTText (from `../node_modules/react-native-macos/Libraries/Text`)
   - React-RCTVibration (from `../node_modules/react-native-macos/Libraries/Vibration`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native-macos/ReactCommon`)
-  - RNKeychain (from `../node_modules/clave-rn-keychain`)
+  - RNKeychain (from `../node_modules/c@getclave/react-native-keychain`)
   - Yoga (from `../node_modules/react-native-macos/ReactCommon/yoga`)
 
 EXTERNAL SOURCES:
@@ -335,7 +335,7 @@ EXTERNAL SOURCES:
   ReactCommon:
     :path: "../node_modules/react-native-macos/ReactCommon"
   RNKeychain:
-    :path: "../node_modules/clave-rn-keychain"
+    :path: "../node_modules/@getclave/react-native-keychain"
   Yoga:
     :path: "../node_modules/react-native-macos/ReactCommon/yoga"
 

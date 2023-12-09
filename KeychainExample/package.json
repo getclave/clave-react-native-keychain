@@ -8,12 +8,12 @@
     "macos": "react-native run-macos",
     "start": "react-native start",
     "test": "jest",
-    "postinstall": "DESTINATION='node_modules/clave-rn-keychain' LIB_FILE=`cd .. && echo \\`pwd\\`/\\`npm pack\\`` && (rm -rf $DESTINATION || true) && mkdir $DESTINATION && tar -xvzf $LIB_FILE -C $DESTINATION --strip-components 1 && rm $LIB_FILE"
+    "postinstall": "DESTINATION='node_modules/@getclave/react-native-keychain' LIB_FILE=`cd .. && echo \\`pwd\\`/\\`npm pack\\`` && (rm -rf $DESTINATION || true) && mkdir $DESTINATION && tar -xvzf $LIB_FILE -C $DESTINATION --strip-components 1 && rm $LIB_FILE"
   },
   "dependencies": {
     "react": "18.0.0",
     "react-native": "0.69.0",
-    "clave-rn-keychain": "*",
+    "@getclave/react-native-keychain": "*",
     "react-native-segmented-control-tab": "^4.0.0"
   },
   "devDependencies": {

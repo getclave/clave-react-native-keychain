@@ -1,4 +1,4 @@
-declare module 'clave-rn-keychain' {
+declare module 'clave-react-native-keychain' {
   export interface Result {
     service: string;
     storage: string;
